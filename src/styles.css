@@ -1,0 +1,60 @@
+:root {
+    --text-color-light: #333;
+    --background-color-light: #f8f9fa;
+    --text-color-dark: #ddd;
+    --background-color-dark: #212529;
+    --background-color-gray: #3f5061; 
+    --background-color: var(--background-color-light);
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+.light-theme {
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
+}
+
+.dark-theme {
+  color: var(--text-color-dark);
+  background-color: var(--background-color-dark);
+}
+
+.dark-theme .card {
+  color: var(--text-color-dark);
+  background-color: #666487;
+}
+
+.dark-theme .theme-toggle-btn {
+  color: #fff;
+}
+
+.dark-theme .timer, .dark-theme .fa-clock {
+  color: #fff; 
+}
+
+.dark-theme .list-group:not(.list-group-flush) .list-group-item {
+  background-color: #3f5061;
+  color: #ddd;
+}
+
+.fa-sun:before {
+  color: #ffe7d7;
+}
+
+.fa-moon:before {
+  color: #001b50;
+}
+
+.fixed-card-size {
+  width: 500px;
+}

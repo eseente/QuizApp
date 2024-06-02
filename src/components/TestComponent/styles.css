@@ -1,0 +1,32 @@
+.timer {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.timer i {
+    color: #555;
+}
+
+.urgent {
+    animation: pulse 1s infinite;
+    transform-origin: left center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+    50% { transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); }
+    100% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+}
+
+.container {
+    width: 60%;
+}
+
+.fixed-size {
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+}
